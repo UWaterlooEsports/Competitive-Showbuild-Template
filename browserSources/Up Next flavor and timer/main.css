@@ -6,7 +6,8 @@ according to Flexbox */
     --white: rgba(255,255,255,1);
     --black: rgba(26,26,26,1);
     --mainFont: "Gotham Book";
-
+    --mainFontBold: "Gotham Bold";
+    --lightFont: "Gotham Light";
     --secondaryFont: Bison;
 }
 
@@ -14,9 +15,17 @@ according to Flexbox */
     font-family: 'Gotham Book';
     src: url('src/fonts/GothamBook.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('src/fonts/GothamBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('src/fonts/GothamLight.ttf') format('truetype');
+}
 
 body {
-    background-image: url("src/StartingSoon.png");
+    background-image: url("src/UpNext.png");
     width:100%;
     height:100%;
 }
@@ -48,4 +57,23 @@ body {
     margin-block-start: 10px;
     margin-block-end: auto;
     color: var(--white);
+}
+
+.flavor {
+    display:flex;
+    flex-direction: row;
+
+    position: fixed;
+    top:357px;
+    left:110px;
+    width:1920px;
+}
+
+#flavorText {
+    text-align: left;
+    font-size: 40px;
+    font-family: var(--lightFont);
+    color: var(--black);
+    margin: 0px 15px 0px 15px;
+    letter-spacing: 0.1em;
 }
