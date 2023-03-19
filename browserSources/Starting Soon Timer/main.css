@@ -1,0 +1,54 @@
+/* Highly recommend reading https://css-tricks.com/snippets/css/a-guide-to-flexbox/ to understand orienting elements
+according to Flexbox */
+
+:root {
+    /* Define global variables */
+    --white: rgba(255,255,255,1);
+    --black: rgba(26,26,26,1);
+    --mainFont: Gotham;
+    --mainFontStyle: Book;
+    --secondaryFont: Bison;
+}
+
+
+body {
+    background-image: url("src/StartingSoon.png");
+    width:100%;
+    height:100%;
+}
+
+.bodyClass {
+
+}
+
+
+.timer {
+    position: fixed;
+    top:20px;
+    width:650px;
+}
+
+.subText {
+    position:fixed;
+    top:520px;
+    width:1920px;
+}
+
+
+#timerTxt {
+    text-align: center;
+    font-size: 80px;
+    font-family: var(--mainFont);
+    font-style: var(--mainFontStyle);
+    color: var(--black);
+}
+
+#nextUpText {
+    text-align: center;
+    font-size: 40px;
+    font-family: var(--secondaryFont);
+    color: var(--white);
+    margin-block-start: 10px;
+    margin-block-end: auto;
+    color: var(--white);
+}
